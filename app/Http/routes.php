@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','PagesController@index');
+Route::get('about','PagesController@about');
+Route::get('songs','Songs@songsList');
+Route::get('songs/{id}','Songs@show');
+Route::get('students','StudentController@information');
+//Route::get('students/{id}','StudentController@show');
+Route::get('model','StudentController@noMethod');
+Route::get('users','UserController@getUser');
+//$router->resource('students','StudentController');

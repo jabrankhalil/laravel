@@ -19,3 +19,11 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+$factory->define(App\VoterList::class, function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->name,
+        'father_name' => $faker->name,
+        'id_no'=>rand(3210253375775,3210253377000),
+
+    ];
+});
