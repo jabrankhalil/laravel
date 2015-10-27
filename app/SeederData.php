@@ -4,8 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class test extends Model
+class SeederData extends Model
 {
     //
-    protected $table='test';
+    protected $table="seeder";
 }

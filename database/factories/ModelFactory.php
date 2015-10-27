@@ -27,3 +27,11 @@ $factory->define(App\VoterList::class, function (Faker\Generator $faker) {
 
     ];
 });
+$factory->define(App\SeederData::class, function (Faker\Generator $faker) {
+    return [
+        'test' =>rand(1,10),
+        'test_status' => $faker->name,
+
+
+    ];
+});

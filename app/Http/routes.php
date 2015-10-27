@@ -19,4 +19,12 @@ Route::get('students','StudentController@information');
 //Route::get('students/{id}','StudentController@show');
 Route::get('model','StudentController@noMethod');
 Route::get('users','UserController@getUser');
+Route::get('seeder','seederController@data');
+Route::get('articals','ArticalController@index');
+Route::get('artical/create','ArticalController@create');
+Route::post('artical','ArticalController@store');
+Route::get('test',function(){
+    return "php unit testss";
+});
+
 //$router->resource('students','StudentController');

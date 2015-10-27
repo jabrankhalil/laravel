@@ -9,9 +9,9 @@ use App\User;
 class UserController extends Controller
 {
     //
-    public function getUser(User $user)
+    public function getUser()
     {
-        $values=$user::userName(['Imelda Abernathy'])->get();
+        $values=User::userName(['Imelda Abernathy'])->get();
         return view('user.user',compact('values'));
     }
 }
